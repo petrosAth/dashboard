@@ -6,7 +6,6 @@ A dashboard design. Build for practicing on several web development tools and la
 
 - `HTML`: Created a sign-up form
 - `SCSS`: Used for styling utilizing the 7-1 file structure
-- `JavaScript`: Implemented a password match feature for the sign-up form
 
 ## Tools
 
