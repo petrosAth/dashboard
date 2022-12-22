@@ -4,7 +4,275 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.scss" />
+    <script src="https://kit.fontawesome.com/9236152b7e.js" crossorigin="anonymous"></script>
+    <script type="module" src="/src/scripts/javasript.js" defer></script>
     <title>Dashboard</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__utility">
+        <div class="header__utility__search search">
+          <div class="search__icon"><i class="fa-solid fa-search"></i></div>
+          <div class="search__search-box"><input type="search" class="search__search-box__input" /></div>
+        </div>
+        <div class="header__utility__notifications"><i class="fa-regular fa-bell"></i></div>
+        <div class="header__utility__user user">
+          <div class="user__icon"></div>
+          <div class="user__info">
+            <p class="user__name">Morgan Oakley</p>
+          </div>
+        </div>
+      </div>
+      <div class="header__control">
+        <div class="header__control__user user">
+          <div class="user__icon"></div>
+          <div class="user__info">
+            <p class="user__salute">Hi there,</p>
+            <p class="user__name">Morgan Oakley <span class="user__id">(@morgan)</span></p>
+          </div>
+        </div>
+        <div class="header__control__actions">
+          <ul>
+            <li><button>New</button></li>
+            <li><button>Upload</button></li>
+            <li><button>Share</button></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <aside>
+      <nav class="sidebar">
+        <h1 class="sidebar__title">
+          <a class="sidebar__list__item" href="#"
+            ><i class="sidebar__list__item__icon fa-solid fa-table"></i>
+            <span class="sidebar__list__item__text">Dashboard</span></a
+          >
+        </h1>
+        <ul class="sidebar__list">
+          <li>
+            <a class="sidebar__list__item" href="#"
+              ><i class="sidebar__list__item__icon fa-solid fa-house"></i>
+              <span class="sidebar__list__item__text">Home</span></a
+            >
+          </li>
+          <li>
+            <a class="sidebar__list__item" href="#"
+              ><i class="sidebar__list__item__icon fa-solid fa-address-card"></i>
+              <span class="sidebar__list__item__text">Profile</span></a
+            >
+          </li>
+          <li>
+            <a class="sidebar__list__item" href="#"
+              ><i class="sidebar__list__item__icon fa-solid fa-comments"></i>
+              <span class="sidebar__list__item__text">Messages</span></a
+            >
+          </li>
+          <li>
+            <a class="sidebar__list__item" href="#"
+              ><i class="sidebar__list__item__icon fa-solid fa-clock"></i>
+              <span class="sidebar__list__item__text">History</span></a
+            >
+          </li>
+          <li>
+            <a class="sidebar__list__item" href="#"
+              ><i class="sidebar__list__item__icon fa-solid fa-list-check"></i>
+              <span class="sidebar__list__item__text">Tasks</span></a
+            >
+          </li>
+          <li>
+            <a class="sidebar__list__item" href="#"
+              ><i class="sidebar__list__item__icon fa-solid fa-users"></i>
+              <span class="sidebar__list__item__text">Communities</span></a
+            >
+          </li>
+        </ul>
+        <ul class="sidebar__list">
+          <li>
+            <a class="sidebar__list__item" href="#"
+              ><i class="sidebar__list__item__icon fa-solid fa-gear"></i>
+              <span class="sidebar__list__item__text">Settings</span></a
+            >
+          </li>
+          <li>
+            <a class="sidebar__list__item" href="#"
+              ><i class="sidebar__list__item__icon fa-solid fa-circle-question"></i>
+              <span class="sidebar__list__item__text">Support</span></a
+            >
+          </li>
+          <li>
+            <a class="sidebar__list__item" href="#"
+              ><i class="sidebar__list__item__icon fa-solid fa-lock"></i>
+              <span class="sidebar__list__item__text">Privacy</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <section class="section projects">
+        <div class="section__title projects__title">
+          <h2>Your Projects</h2>
+        </div>
+        <div class="section__container">
+          <div class="projects__container">
+            <div class="projects__grid__item">
+              <div class="project">
+                <h3>Super Cool Project</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nobis, omnis quidem sint dolor error
+                  eaque aliquam modi vitae voluptatum. Perferendis iste inventore magnam nemo atque iusto ea error
+                  reprehenderit?
+                </p>
+                <div class="project__actions">
+                  <button><i class="fa-regular fa-star"></i></button>
+                  <button><i class="fa-regular fa-eye"></i></button>
+                  <button><i class="fa-solid fa-code-fork"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="projects__grid__item">
+              <div class="project">
+                <h3>Less Cool Project</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi eius adipisci fugit, deserunt
+                  animi, magnam cumque eum nobis dicta provident, culpa quidem libero in. Maxime blanditiis voluptatum
+                  iure adipisci odio!
+                </p>
+                <div class="project__actions">
+                  <button><i class="fa-regular fa-star"></i></button>
+                  <button><i class="fa-regular fa-eye"></i></button>
+                  <button><i class="fa-solid fa-code-fork"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="projects__grid__item">
+              <div class="project">
+                <h3>Impossible App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate in sunt sapiente eligendi rem
+                  dolores cumque esse doloribus? Soluta sunt maxime incidunt ipsum, iure exercitationem fugit
+                  dignissimos distinctio atque amet.
+                </p>
+                <div class="project__actions">
+                  <button><i class="fa-regular fa-star"></i></button>
+                  <button><i class="fa-regular fa-eye"></i></button>
+                  <button><i class="fa-solid fa-code-fork"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="projects__grid__item">
+              <div class="project">
+                <h3>Easy Peasy App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores delectus tempora quibusdam, voluptate
+                  quod nisi dicta quaerat eaque cumque error. Perspiciatis, hic accusantium beatae pariatur libero
+                  laboriosam odio eos cupiditate?
+                </p>
+                <div class="project__actions">
+                  <button><i class="fa-regular fa-star"></i></button>
+                  <button><i class="fa-regular fa-eye"></i></button>
+                  <button><i class="fa-solid fa-code-fork"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="projects__grid__item">
+              <div class="project">
+                <h3>Ad Blocker</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur tempora dolorum voluptates,
+                  voluptatem perspiciatis architecto esse nemo eos amet dolores assumenda beatae, voluptate fugiat quo
+                  nobis doloribus! Voluptate, maxime ut?
+                </p>
+                <div class="project__actions">
+                  <button><i class="fa-regular fa-star"></i></button>
+                  <button><i class="fa-regular fa-eye"></i></button>
+                  <button><i class="fa-solid fa-code-fork"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="projects__grid__item">
+              <div class="project">
+                <h3>Money Maker</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error animi voluptates reiciendis maiores
+                  quae iure vel quia nemo architecto deserunt? Odit iure possimus temporibus cupiditate fugiat totam
+                  incidunt minima qui!
+                </p>
+                <div class="project__actions">
+                  <button><i class="fa-regular fa-star"></i></button>
+                  <button><i class="fa-regular fa-eye"></i></button>
+                  <button><i class="fa-solid fa-code-fork"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section announcements">
+        <div class="section__title announcements__title">
+          <h2>Announcements</h2>
+        </div>
+        <div class="section__container">
+          <div class="announcements__item">
+            <h3>Site Maintenance</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae laborum eum corporis doloremque
+              maxime laboriosam provident sint quia voluptatum!
+            </p>
+          </div>
+          <div class="announcements__item">
+            <h3>Commynity Share Day</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam illum eos maxime? Reiciendis
+              labore qui aspernatur hic. Eaque eligendi placeat nam sunt est dignissimos quisquam iure harum, hic soluta
+              mollitia corporis officiis velit dicta quidem libero, eum esse veniam?
+            </p>
+          </div>
+          <div class="announcements__item">
+            <h3>Update Privacy Policy</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quidem cumque. Itaque praesentium
+              omnis cum excepturi, delectus voluptatum numquam nemo deleniti? Dolorem quibusdam nam magni veritatis
+              fugit incidunt provident quas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section trending">
+        <div class="section__title trending__title">
+          <h2>Trending</h2>
+        </div>
+        <div class="section__container">
+          <div class="trending__item">
+            <div class="trending__item__icon"></div>
+            <div class="trending__item__info">
+              <h3>@tegan</h3>
+              <p>World Peace Builder</p>
+            </div>
+          </div>
+          <div class="trending__item">
+            <div class="trending__item__icon"></div>
+            <div class="trending__item__info">
+              <h3>@morgan</h3>
+              <p>Super Cool Project</p>
+            </div>
+          </div>
+          <div class="trending__item">
+            <div class="trending__item__icon"></div>
+            <div class="trending__item__info">
+              <h3>@kendall</h3>
+              <p>Life Changing App</p>
+            </div>
+          </div>
+          <div class="trending__item">
+            <div class="trending__item__icon"></div>
+            <div class="trending__item__info">
+              <h3>@alex</h3>
+              <p>No Traffic Maker</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
