@@ -5,31 +5,33 @@
 /// Load custom modules
 @use "../abstracts/" as a;
 
-//Import Roboto font family
+/// Import external fonts
+/// Import Roboto font family
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
 
 body {
   font-family: a.$font-stack-text;
   background-color: a.theme-color("background", "base");
-  @include a.text-setting("base");
+  @include a.text-setting(400);
 }
 
 h1,
 h2,
-h3 {
-  font-family: a.$font-stack-text;
-}
-
-h1 {
-  @include a.text-setting("xl");
-}
-
-h2 {
-  @include a.text-setting("md");
+h3,
+h4,
+h5 {
   font-weight: 600;
 }
 
+h1 {
+  margin: 0;
+  @include a.text-setting(900);
+}
+
+h2 {
+  @include a.text-setting(800);
+}
+
 h3 {
-  @include a.text-setting("base");
-  font-weight: 500;
+  @include a.text-setting(700);
 }

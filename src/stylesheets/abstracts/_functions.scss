@@ -37,7 +37,7 @@
 }
 
 /// Returns font size from the text-settings table
-/// @param {String} $size - font size
+/// @param {Number} $size - font size
 /// @return {String}
 /// @require $text-settings
 @function text-scale($size) {
@@ -45,7 +45,7 @@
 }
 
 /// Returns line height from the text-settings table
-/// @param {Sring} $size - line height
+/// @param {Number} $size - line height
 /// @return {Number}
 /// @require $text-settings
 @function line-height($size) {

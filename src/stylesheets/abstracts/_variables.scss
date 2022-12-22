@@ -22,29 +22,41 @@ $base-line-height: 1.25 * $base-font-size;
 
 // Text font sizes
 $text-settings: (
-  "xs": (
-    font-size: 0.75rem,
-    line-height: $base-line-height * 0.75,
+  900: (
+    font-size: 3rem,
+    line-height: 3,
   ),
-  "sm": (
-    font-size: 0.875rem,
-    line-height: $base-line-height * 0.875,
+  800: (
+    font-size: 2.5rem,
+    line-height: 2.5,
   ),
-  "base": (
-    font-size: $base-font-size,
-    line-height: $base-line-height,
-  ),
-  "md": (
-    font-size: 1.375rem,
-    line-height: $base-line-height * 1.375,
-  ),
-  "lg": (
+  700: (
     font-size: 2rem,
-    line-height: $base-line-height * 2,
+    line-height: 2,
   ),
-  "xl": (
-    font-size: clamp(3.5rem, 12vw + 1rem, 6rem),
-    line-height: $base-line-height * 3.5,
+  600: (
+    font-size: 1.5rem,
+    line-height: 1.5,
+  ),
+  500: (
+    font-size: 1.25rem,
+    line-height: 1.25,
+  ),
+  400: (
+    font-size: $base-font-size,
+    line-height: $base-line-height * 1,
+  ),
+  300: (
+    font-size: 0.875rem,
+    line-height: 0.875,
+  ),
+  200: (
+    font-size: 0.75rem,
+    line-height: 0.75,
+  ),
+  100: (
+    font-size: 0.625rem,
+    line-height: 0.625,
   ),
 );
 
